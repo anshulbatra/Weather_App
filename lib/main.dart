@@ -99,7 +99,7 @@ class MyAppState extends State<MyApp> {
     Map<String, double> location;
 
     try {
-      location = await _location.getLocation;
+      location = await _location.getLocation(); //Second Commit - Error Removed
 
       error = null;
     } on PlatformException catch (e) {
